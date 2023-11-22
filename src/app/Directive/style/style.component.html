@@ -1,0 +1,7 @@
+<p [ngStyle]="{
+'color':  color, 
+'backgroundColor': backgroundColor,
+'font-size':size
+}">style works!</p>
+<input type="text" class="form-control" [(ngModel)]="color">
+<input type="number" class="from-control" #taille (change)="sizechanger(taille)">

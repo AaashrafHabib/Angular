@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChildAComponent } from './child-a/child-a.component';
+import { ChildBComponent } from './child-b/child-b.component';
+
+import { ColorComponent } from './color/color.component';
+import { FormsModule } from '@angular/forms';
+import { StyleComponent } from './Directive/style/style.component';
+import { ClassComponent } from './Directive/class/class.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildAComponent,
+    ChildBComponent,
+    ColorComponent,
+    StyleComponent,
+    ClassComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
